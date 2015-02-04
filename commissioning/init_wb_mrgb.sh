@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 PORT=/dev/ttyUSB0
 ADDR=$1
