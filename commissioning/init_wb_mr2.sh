@@ -16,6 +16,10 @@ echo "Verifying address $ADDR"
 modbus_client  -mrtu $PORT -t0x06 -a$ADDR -r0x80 $ADDR
 
 
+echo "Setting button mode to 0"
+modbus_client -mrtu -s1 -pnone $PORT -a$ADDR -t0x06 -r5 0
+
+
 echo "Set 0, 1"
 set_coils 0 1
 sleep 1
