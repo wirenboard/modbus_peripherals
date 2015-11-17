@@ -11,6 +11,6 @@ fi
 FWBIN=`mktemp`
 arm-linux-gnueabi-objcopy -Iihex -Obinary $1 $FWBIN
 
-st-flash write $FWBIN 0x08000000
+st-flash --reset write $FWBIN 0x08000000
 
 rm $FWBIN
