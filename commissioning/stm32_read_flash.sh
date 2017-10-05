@@ -2,7 +2,6 @@
 
 if [ $# -ne 1 ]
   then
-    echo "Usage: ./stm32_program_and_lock.sh /path/to/output_file.bin"
     echo "Usage: ./stm32_read_flash.sh /path/to/output_file.bin"
     exit 1
 fi
